@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* row */
+
+.row {
+	max-width: 1200px;
+	padding: 12px;
+	margin: 0 auto;
+}
+
+.row h2 {
+	font-size: 2rem;
+	margin-bottom: 12px;
+}
+
+#collections {
+	width: 100%;
+
+	/* background-color: red; */
+}
+
+#collections ul {
+	display: flex;
+	list-style: none;
+	flex-flow: row wrap;
+	gap: 2%;
+}
+
+#collections ul li {
+	flex-basis: calc(100% / 5 - 2%);
+	margin-bottom: 2%;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+#collections img {
+	width: 100%;
+	height: 200px;
+}
+#collections figure {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#collections figcaption {
+	padding: 8px;
+	color: white;
+	background-color: black;
+}
+
+#collections figcaption h3 {
+	font-size: 1.2rem;
+	margin-bottom: 8px;
+}
+
+#collections figcaption p {
+	font-size: 2rem;
+}
+
+#collections figcaption span {
+	margin-left: 4px;
+	font-weight: bold;
+}
+
+/* Misssions */
+
+#mission div {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1%;
+}
+
+#mission img {
+	width: 250px;
+	flex-basis: 24.75%;
+	border-radius: 50%;
+	height: 250px;
+}
+
+#mission p {
+	font-size: 1.2rem;
+	flex-basis: 73.5%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* Nav */
+
+nav {
+	display: flex;
+	padding: 12px;
+	background-color: grey;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 6%;
+}
+
+nav .logo {
+	order: 2;
+	flex-basis: 44%;
+}
+
+nav .links1 {
+	order: 1;
+	flex-basis: 22%;
+}
+
+nav .links2 {
+	order: 3;
+	flex-basis: 22%;
+}
+
+nav img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav .nav-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1%;
+	/* gap: 6%; */
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	padding-bottom: 4px;
+	margin-right: 13px;
+	padding: 10px;
+}
+
+nav a:hover {
+	border-bottom: solid black 2px;
+}
+
+footer {
+	background-color: gray;
+	color: white;
+	padding: 12px;
+}
+
+footer h2 {
+	text-align: center;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	flex-flow: column wrap;
+	align-items: center;
+}
+footer li {
+	margin-top: 12px;
+}
+footer a {
+	text-decoration: none;
+	color: crimson;
+}
+
+footer a:hover {
+	color: white;
+}
+
+/* desktops */
+@media (max-width: 992px) {
+	#collections ul li {
+		flex-basis: calc(100% / 4 - 2%);
+	}
+	#mission p {
+		text-align: center;
+	}
+
+	#mission p {
+		text-align: justify;
+	}
+
+	nav .logo {
+		order: 1;
+		flex-basis: 100%;
+	}
+
+	nav .links1 {
+		order: 2;
+		flex-basis: 47%;
+		margin-top: 16px;
+	}
+
+	nav .links2 {
+		order: 3;
+		flex-basis: 47%;
+		margin-top: 16px;
+	}
+
+	nav a {
+		margin-right: 0;
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	nav li {
+		flex-basis: 49.5%;
+	}
+}
+/* tablet */
+@media (max-width: 768px) {
+	#collections ul li {
+		flex-basis: 49%;
+	}
+
+	h2 {
+		text-align: center;
+	}
+}
+/* phone */
+@media (max-width: 576px) {
+	#collections ul li {
+		flex-basis: 100%;
+	}
+
+	nav .logo {
+		order: 1;
+		flex-basis: 100%;
+	}
+
+	nav .links1 {
+		order: 2;
+		flex-basis: 100%;
+		margin-top: 16px;
+	}
+
+	nav .links2 {
+		order: 3;
+		flex-basis: 100%;
+		margin-top: 16px;
+	}
+
+	nav a {
+		background-color: crimson;
+		color: white;
+		border-radius: 12px;
+	}
+
+	nav a:hover {
+		border-bottom: none;
+	}
+}
